@@ -1,0 +1,1414 @@
+.
+├── file_tree.lst
+├── ie
+│   ├── craw
+│   │   ├── baidu_baike
+│   │   │   ├── baidu_baike
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── items.py
+│   │   │   │   ├── middlewares.py
+│   │   │   │   ├── pipelines.py
+│   │   │   │   ├── settings.py
+│   │   │   │   └── spiders
+│   │   │   │       ├── baidu_baike.py
+│   │   │   │       └── __init__.py
+│   │   │   └── scrapy.cfg
+│   │   ├── craw_all_baidu
+│   │   │   ├── baidu_baike
+│   │   │   │   ├── commands
+│   │   │   │   │   ├── crawlall.py
+│   │   │   │   │   └── __init__.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── items.py
+│   │   │   │   ├── middlewares.py
+│   │   │   │   ├── pipelines.py
+│   │   │   │   ├── settings.py
+│   │   │   │   ├── setup.py
+│   │   │   │   └── spiders
+│   │   │   │       ├── baidu_baike-10.py
+│   │   │   │       ├── baidu_baike-2.py
+│   │   │   │       ├── baidu_baike-3.py
+│   │   │   │       ├── baidu_baike-4.py
+│   │   │   │       ├── baidu_baike-5.py
+│   │   │   │       ├── baidu_baike-6.py
+│   │   │   │       ├── baidu_baike-7.py
+│   │   │   │       ├── baidu_baike-8.py
+│   │   │   │       ├── baidu_baike-9.py
+│   │   │   │       ├── baidu_baike.py
+│   │   │   │       └── __init__.py
+│   │   │   ├── creat_mysql.md
+│   │   │   └── scrapy.cfg
+│   │   ├── craw_all_hudong
+│   │   │   ├── craw_all_hudong
+│   │   │   │   ├── commands
+│   │   │   │   │   ├── crawlall.py
+│   │   │   │   │   └── __init__.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── items.py
+│   │   │   │   ├── middlewares.py
+│   │   │   │   ├── pipelines.py
+│   │   │   │   ├── settings.py
+│   │   │   │   ├── setup.py
+│   │   │   │   └── spiders
+│   │   │   │       ├── hudong_baike.py
+│   │   │   │       └── __init__.py
+│   │   │   ├── creat_mysql.md
+│   │   │   └── scrapy.cfg
+│   │   ├── craw_without_spider
+│   │   │   ├── mysql
+│   │   │   │   ├── creat_baidu_baike_sql.txt
+│   │   │   │   ├── creat_hudong_baike_sql.txt
+│   │   │   │   ├── creat_sql.txt
+│   │   │   │   └── help_mysql.txt
+│   │   │   └── utils
+│   │   │       ├── basic_info.py
+│   │   │       ├── craw.py
+│   │   │       └── kg_movie_movie.sql
+│   │   ├── hudong_baike
+│   │   │   ├── hudong_baike
+│   │   │   │   ├── creat_sql.txt
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── items.py
+│   │   │   │   ├── middlewares.py
+│   │   │   │   ├── pipelines.py
+│   │   │   │   ├── settings.py
+│   │   │   │   └── spiders
+│   │   │   │       ├── hudong_baike.py
+│   │   │   │       └── __init__.py
+│   │   │   └── scrapy.cfg
+│   │   ├── news_spider
+│   │   │   ├── news
+│   │   │   │   └── __init__
+│   │   │   ├── news_spider
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── items.py
+│   │   │   │   ├── middlewares.py
+│   │   │   │   ├── pipelines.py
+│   │   │   │   ├── settings.py
+│   │   │   │   └── spiders
+│   │   │   │       ├── huxiu_spider.py
+│   │   │   │       └── __init__.py
+│   │   │   ├── readme.md
+│   │   │   └── scrapy.cfg
+│   │   └── weixin_spider
+│   │       ├── creat_mysql.txt
+│   │       ├── scrapy.cfg
+│   │       └── weixin_spider
+│   │           ├── __init__.py
+│   │           ├── items.py
+│   │           ├── middlewares.py
+│   │           ├── pipelines.py
+│   │           ├── settings.py
+│   │           └── spiders
+│   │               ├── __init__.py
+│   │               └── weixin_spiders.py
+│   ├── deepdive
+│   │   ├── app.ddlog
+│   │   ├── db.url
+│   │   ├── deepdive.conf
+│   │   ├── input
+│   │   │   └── __init__.py
+│   │   ├── start_posql.sh
+│   │   └── udf
+│   │       ├── baidu_baike
+│   │       │   ├── baidu_baike
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── items.py
+│   │       │   │   ├── middlewares.py
+│   │       │   │   ├── pipelines.py
+│   │       │   │   ├── settings.py
+│   │       │   │   └── spiders
+│   │       │   │       ├── baidu_baike.py
+│   │       │   │       └── __init__.py
+│   │       │   └── scrapy.cfg
+│   │       ├── extract_play_features.py
+│   │       ├── get_actor_movie.py
+│   │       ├── __init__.py
+│   │       ├── map_actor_mention.py
+│   │       ├── map_movie_mention.py
+│   │       ├── map_play_candidate.py
+│   │       ├── nlp_markup.sh
+│   │       ├── supervise_play.py
+│   │       └── trans.py
+│   ├── re_cnn_att
+│   │   ├── clean.py
+│   │   ├── data
+│   │   │   └── __init__.py
+│   │   ├── gen_re_from_baidu.py
+│   │   └── word2vec.py
+│   └── struct_to_rdf
+│       ├── baidu2neo4j
+│       │   ├── cleanFile.py
+│       │   ├── clean.py
+│       │   ├── gen_disambi_infobox.py
+│       │   ├── get_subject.py
+│       │   ├── __init__.py
+│       │   └── remove_disambi.py
+│       └── movie_actor
+│           ├── clean_actor.py
+│           ├── clean_mysql.py
+│           ├── complete_mysql.py
+│           ├── d2rq-0.8.1
+│           │   ├── baidu_baike.nt
+│           │   ├── build.xml
+│           │   ├── d2r-query
+│           │   ├── d2r-query.bat
+│           │   ├── d2r-server
+│           │   ├── d2r-server.bat
+│           │   ├── doc
+│           │   │   ├── archive.html
+│           │   │   ├── d2rq-language.html
+│           │   │   ├── d2r-query.html
+│           │   │   ├── d2r-server.html
+│           │   │   ├── dump-rdf.html
+│           │   │   ├── example
+│           │   │   │   ├── assembler.ttl
+│           │   │   │   ├── config-iswc.ttl
+│           │   │   │   ├── iswc.daml
+│           │   │   │   ├── iswc-mysql.sql
+│           │   │   │   ├── mapping-iswc.ttl
+│           │   │   │   ├── simple.sql
+│           │   │   │   └── wordpress.ttl
+│           │   │   ├── generate-mapping.html
+│           │   │   ├── getting-started.html
+│           │   │   ├── images
+│           │   │   │   ├── architecture.png
+│           │   │   │   ├── d2rs-screenshot-start.png
+│           │   │   │   ├── deri-logo.png
+│           │   │   │   ├── fu-logo.gif
+│           │   │   │   └── mapping.png
+│           │   │   ├── index.html
+│           │   │   ├── javadoc
+│           │   │   │   ├── allclasses-frame.html
+│           │   │   │   ├── allclasses-noframe.html
+│           │   │   │   ├── constant-values.html
+│           │   │   │   ├── d2rq
+│           │   │   │   │   ├── class-use
+│           │   │   │   │   │   ├── d2r_query.html
+│           │   │   │   │   │   ├── dump_rdf.html
+│           │   │   │   │   │   ├── generate_mapping.html
+│           │   │   │   │   │   └── server.html
+│           │   │   │   │   ├── d2r_query.html
+│           │   │   │   │   ├── dump_rdf.html
+│           │   │   │   │   ├── generate_mapping.html
+│           │   │   │   │   ├── package-frame.html
+│           │   │   │   │   ├── package-summary.html
+│           │   │   │   │   ├── package-tree.html
+│           │   │   │   │   ├── package-use.html
+│           │   │   │   │   └── server.html
+│           │   │   │   ├── de
+│           │   │   │   │   └── fuberlin
+│           │   │   │   │       └── wiwiss
+│           │   │   │   │           ├── d2rq
+│           │   │   │   │           │   ├── algebra
+│           │   │   │   │           │   │   ├── AliasMap.Alias.html
+│           │   │   │   │           │   │   ├── AliasMap.html
+│           │   │   │   │           │   │   ├── Attribute.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── AliasMap.Alias.html
+│           │   │   │   │           │   │   │   ├── AliasMap.html
+│           │   │   │   │           │   │   │   ├── Attribute.html
+│           │   │   │   │           │   │   │   ├── ColumnRenamer.html
+│           │   │   │   │           │   │   │   ├── ColumnRenamerMap.html
+│           │   │   │   │           │   │   │   ├── CompatibleRelationGroup.html
+│           │   │   │   │           │   │   │   ├── ExpressionProjectionSpec.html
+│           │   │   │   │           │   │   │   ├── Join.html
+│           │   │   │   │           │   │   │   ├── JoinOptimizer.html
+│           │   │   │   │           │   │   │   ├── MutableRelation.html
+│           │   │   │   │           │   │   │   ├── NodeRelation.html
+│           │   │   │   │           │   │   │   ├── OrderSpec.html
+│           │   │   │   │           │   │   │   ├── ProjectionSpec.html
+│           │   │   │   │           │   │   │   ├── RelationalOperators.html
+│           │   │   │   │           │   │   │   ├── Relation.html
+│           │   │   │   │           │   │   │   ├── RelationImpl.html
+│           │   │   │   │           │   │   │   ├── RelationName.html
+│           │   │   │   │           │   │   │   ├── TripleRelation.html
+│           │   │   │   │           │   │   │   └── VariableConstraints.html
+│           │   │   │   │           │   │   ├── ColumnRenamer.html
+│           │   │   │   │           │   │   ├── ColumnRenamerMap.html
+│           │   │   │   │           │   │   ├── CompatibleRelationGroup.html
+│           │   │   │   │           │   │   ├── ExpressionProjectionSpec.html
+│           │   │   │   │           │   │   ├── Join.html
+│           │   │   │   │           │   │   ├── JoinOptimizer.html
+│           │   │   │   │           │   │   ├── MutableRelation.html
+│           │   │   │   │           │   │   ├── NodeRelation.html
+│           │   │   │   │           │   │   ├── OrderSpec.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── ProjectionSpec.html
+│           │   │   │   │           │   │   ├── RelationalOperators.html
+│           │   │   │   │           │   │   ├── Relation.html
+│           │   │   │   │           │   │   ├── RelationImpl.html
+│           │   │   │   │           │   │   ├── RelationName.html
+│           │   │   │   │           │   │   ├── TripleRelation.html
+│           │   │   │   │           │   │   └── VariableConstraints.html
+│           │   │   │   │           │   ├── assembler
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   └── D2RQAssembler.html
+│           │   │   │   │           │   │   ├── D2RQAssembler.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   └── package-use.html
+│           │   │   │   │           │   ├── ClassMapLister.html
+│           │   │   │   │           │   ├── class-use
+│           │   │   │   │           │   │   ├── ClassMapLister.html
+│           │   │   │   │           │   │   ├── CommandLineTool.html
+│           │   │   │   │           │   │   ├── D2RQException.html
+│           │   │   │   │           │   │   ├── Log4jHelper.html
+│           │   │   │   │           │   │   ├── ResourceDescriber.html
+│           │   │   │   │           │   │   └── SystemLoader.html
+│           │   │   │   │           │   ├── CommandLineTool.html
+│           │   │   │   │           │   ├── csv
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   └── TranslationTableParser.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   └── TranslationTableParser.html
+│           │   │   │   │           │   ├── D2RQException.html
+│           │   │   │   │           │   ├── dbschema
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   └── DatabaseSchemaInspector.html
+│           │   │   │   │           │   │   ├── DatabaseSchemaInspector.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   └── package-use.html
+│           │   │   │   │           │   ├── download
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   └── DownloadContentQuery.html
+│           │   │   │   │           │   │   ├── DownloadContentQuery.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   └── package-use.html
+│           │   │   │   │           │   ├── engine
+│           │   │   │   │           │   │   ├── BindingMaker.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── BindingMaker.html
+│           │   │   │   │           │   │   │   ├── GraphPatternTranslator.html
+│           │   │   │   │           │   │   │   ├── OpTableSQL.html
+│           │   │   │   │           │   │   │   ├── OpUnionTableSQL.html
+│           │   │   │   │           │   │   │   ├── PushDownOpFilterVisitor.html
+│           │   │   │   │           │   │   │   ├── QueryEngineD2RQ.html
+│           │   │   │   │           │   │   │   ├── QueryIterTableSQL.html
+│           │   │   │   │           │   │   │   ├── TransformFilterCNF.DeMorganLawApplyer.html
+│           │   │   │   │           │   │   │   ├── TransformFilterCNF.DistributiveLawApplyer.html
+│           │   │   │   │           │   │   │   ├── TransformFilterCNF.html
+│           │   │   │   │           │   │   │   ├── TransformOpBGP.html
+│           │   │   │   │           │   │   │   └── VarCollector.html
+│           │   │   │   │           │   │   ├── GraphPatternTranslator.html
+│           │   │   │   │           │   │   ├── OpTableSQL.html
+│           │   │   │   │           │   │   ├── OpUnionTableSQL.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── PushDownOpFilterVisitor.html
+│           │   │   │   │           │   │   ├── QueryEngineD2RQ.html
+│           │   │   │   │           │   │   ├── QueryIterTableSQL.html
+│           │   │   │   │           │   │   ├── TransformFilterCNF.DeMorganLawApplyer.html
+│           │   │   │   │           │   │   ├── TransformFilterCNF.DistributiveLawApplyer.html
+│           │   │   │   │           │   │   ├── TransformFilterCNF.html
+│           │   │   │   │           │   │   ├── TransformOpBGP.html
+│           │   │   │   │           │   │   └── VarCollector.html
+│           │   │   │   │           │   ├── expr
+│           │   │   │   │           │   │   ├── Add.html
+│           │   │   │   │           │   │   ├── AttributeExpr.html
+│           │   │   │   │           │   │   ├── BinaryOperator.html
+│           │   │   │   │           │   │   ├── BooleanToIntegerCaseExpression.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── Add.html
+│           │   │   │   │           │   │   │   ├── AttributeExpr.html
+│           │   │   │   │           │   │   │   ├── BinaryOperator.html
+│           │   │   │   │           │   │   │   ├── BooleanToIntegerCaseExpression.html
+│           │   │   │   │           │   │   │   ├── Concatenation.html
+│           │   │   │   │           │   │   │   ├── Conjunction.html
+│           │   │   │   │           │   │   │   ├── Constant.html
+│           │   │   │   │           │   │   │   ├── Disjunction.html
+│           │   │   │   │           │   │   │   ├── Divide.html
+│           │   │   │   │           │   │   │   ├── Equality.html
+│           │   │   │   │           │   │   │   ├── Expression.html
+│           │   │   │   │           │   │   │   ├── GreaterThan.html
+│           │   │   │   │           │   │   │   ├── GreaterThanOrEqual.html
+│           │   │   │   │           │   │   │   ├── LessThan.html
+│           │   │   │   │           │   │   │   ├── LessThanOrEqual.html
+│           │   │   │   │           │   │   │   ├── Multiply.html
+│           │   │   │   │           │   │   │   ├── Negation.html
+│           │   │   │   │           │   │   │   ├── NotNull.html
+│           │   │   │   │           │   │   │   ├── SQLExpression.html
+│           │   │   │   │           │   │   │   ├── Subtract.html
+│           │   │   │   │           │   │   │   └── UnaryMinus.html
+│           │   │   │   │           │   │   ├── Concatenation.html
+│           │   │   │   │           │   │   ├── Conjunction.html
+│           │   │   │   │           │   │   ├── Constant.html
+│           │   │   │   │           │   │   ├── Disjunction.html
+│           │   │   │   │           │   │   ├── Divide.html
+│           │   │   │   │           │   │   ├── Equality.html
+│           │   │   │   │           │   │   ├── Expression.html
+│           │   │   │   │           │   │   ├── GreaterThan.html
+│           │   │   │   │           │   │   ├── GreaterThanOrEqual.html
+│           │   │   │   │           │   │   ├── LessThan.html
+│           │   │   │   │           │   │   ├── LessThanOrEqual.html
+│           │   │   │   │           │   │   ├── Multiply.html
+│           │   │   │   │           │   │   ├── Negation.html
+│           │   │   │   │           │   │   ├── NotNull.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── SQLExpression.html
+│           │   │   │   │           │   │   ├── Subtract.html
+│           │   │   │   │           │   │   └── UnaryMinus.html
+│           │   │   │   │           │   ├── find
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── FindQuery.html
+│           │   │   │   │           │   │   │   ├── TripleQueryIter.html
+│           │   │   │   │           │   │   │   ├── URIMakerRule.html
+│           │   │   │   │           │   │   │   └── URIMakerRule.URIMakerRuleChecker.html
+│           │   │   │   │           │   │   ├── FindQuery.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── TripleQueryIter.html
+│           │   │   │   │           │   │   ├── URIMakerRule.html
+│           │   │   │   │           │   │   └── URIMakerRule.URIMakerRuleChecker.html
+│           │   │   │   │           │   ├── jena
+│           │   │   │   │           │   │   ├── CachingGraphD2RQ.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── CachingGraphD2RQ.html
+│           │   │   │   │           │   │   │   ├── D2RQQueryHandler.html
+│           │   │   │   │           │   │   │   ├── GraphD2RQ.html
+│           │   │   │   │           │   │   │   └── ModelD2RQ.html
+│           │   │   │   │           │   │   ├── D2RQQueryHandler.html
+│           │   │   │   │           │   │   ├── GraphD2RQ.html
+│           │   │   │   │           │   │   ├── ModelD2RQ.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   └── package-use.html
+│           │   │   │   │           │   ├── Log4jHelper.html
+│           │   │   │   │           │   ├── map
+│           │   │   │   │           │   │   ├── ClassMap.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── ClassMap.html
+│           │   │   │   │           │   │   │   ├── Configuration.html
+│           │   │   │   │           │   │   │   ├── Database.html
+│           │   │   │   │           │   │   │   ├── DownloadMap.html
+│           │   │   │   │           │   │   │   ├── MapObject.html
+│           │   │   │   │           │   │   │   ├── Mapping.html
+│           │   │   │   │           │   │   │   ├── PropertyBridge.html
+│           │   │   │   │           │   │   │   ├── PropertyMap.html
+│           │   │   │   │           │   │   │   ├── ResourceMap.html
+│           │   │   │   │           │   │   │   ├── TranslationTable.html
+│           │   │   │   │           │   │   │   └── TranslationTable.Translation.html
+│           │   │   │   │           │   │   ├── Configuration.html
+│           │   │   │   │           │   │   ├── Database.html
+│           │   │   │   │           │   │   ├── DownloadMap.html
+│           │   │   │   │           │   │   ├── MapObject.html
+│           │   │   │   │           │   │   ├── Mapping.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── PropertyBridge.html
+│           │   │   │   │           │   │   ├── PropertyMap.html
+│           │   │   │   │           │   │   ├── ResourceMap.html
+│           │   │   │   │           │   │   ├── TranslationTable.html
+│           │   │   │   │           │   │   └── TranslationTable.Translation.html
+│           │   │   │   │           │   ├── mapgen
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── Filter.html
+│           │   │   │   │           │   │   │   ├── Filter.IdentifierMatcher.html
+│           │   │   │   │           │   │   │   ├── FilterIncludeExclude.html
+│           │   │   │   │           │   │   │   ├── FilterMatchAny.html
+│           │   │   │   │           │   │   │   ├── FilterMatchColumn.html
+│           │   │   │   │           │   │   │   ├── FilterMatchSchema.html
+│           │   │   │   │           │   │   │   ├── FilterMatchTable.html
+│           │   │   │   │           │   │   │   ├── FilterParser.html
+│           │   │   │   │           │   │   │   ├── FilterParser.ParseException.html
+│           │   │   │   │           │   │   │   ├── IRIEncoder.html
+│           │   │   │   │           │   │   │   ├── MappingGenerator.html
+│           │   │   │   │           │   │   │   └── W3CMappingGenerator.html
+│           │   │   │   │           │   │   ├── Filter.html
+│           │   │   │   │           │   │   ├── Filter.IdentifierMatcher.html
+│           │   │   │   │           │   │   ├── FilterIncludeExclude.html
+│           │   │   │   │           │   │   ├── FilterMatchAny.html
+│           │   │   │   │           │   │   ├── FilterMatchColumn.html
+│           │   │   │   │           │   │   ├── FilterMatchSchema.html
+│           │   │   │   │           │   │   ├── FilterMatchTable.html
+│           │   │   │   │           │   │   ├── FilterParser.html
+│           │   │   │   │           │   │   ├── FilterParser.ParseException.html
+│           │   │   │   │           │   │   ├── IRIEncoder.html
+│           │   │   │   │           │   │   ├── MappingGenerator.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   └── W3CMappingGenerator.html
+│           │   │   │   │           │   ├── nodes
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── DetermineNodeType.html
+│           │   │   │   │           │   │   │   ├── FixedNodeMaker.html
+│           │   │   │   │           │   │   │   ├── NodeMaker.html
+│           │   │   │   │           │   │   │   ├── NodeSetConstraintBuilder.html
+│           │   │   │   │           │   │   │   ├── NodeSetFilter.html
+│           │   │   │   │           │   │   │   ├── TypedNodeMaker.html
+│           │   │   │   │           │   │   │   └── TypedNodeMaker.NodeType.html
+│           │   │   │   │           │   │   ├── DetermineNodeType.html
+│           │   │   │   │           │   │   ├── FixedNodeMaker.html
+│           │   │   │   │           │   │   ├── NodeMaker.html
+│           │   │   │   │           │   │   ├── NodeSetConstraintBuilder.html
+│           │   │   │   │           │   │   ├── NodeSetFilter.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── TypedNodeMaker.html
+│           │   │   │   │           │   │   └── TypedNodeMaker.NodeType.html
+│           │   │   │   │           │   ├── optimizer
+│           │   │   │   │           │   │   └── expr
+│           │   │   │   │           │   │       ├── AttributeExprEx.html
+│           │   │   │   │           │   │       ├── class-use
+│           │   │   │   │           │   │       │   ├── AttributeExprEx.html
+│           │   │   │   │           │   │       │   ├── ConstantEx.html
+│           │   │   │   │           │   │       │   ├── TransformExprToSQLApplyer.html
+│           │   │   │   │           │   │       │   └── XSD.html
+│           │   │   │   │           │   │       ├── ConstantEx.html
+│           │   │   │   │           │   │       ├── package-frame.html
+│           │   │   │   │           │   │       ├── package-summary.html
+│           │   │   │   │           │   │       ├── package-tree.html
+│           │   │   │   │           │   │       ├── package-use.html
+│           │   │   │   │           │   │       ├── TransformExprToSQLApplyer.html
+│           │   │   │   │           │   │       └── XSD.html
+│           │   │   │   │           │   ├── package-frame.html
+│           │   │   │   │           │   ├── package-summary.html
+│           │   │   │   │           │   ├── package-tree.html
+│           │   │   │   │           │   ├── package-use.html
+│           │   │   │   │           │   ├── parser
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── MapParser.html
+│           │   │   │   │           │   │   │   └── RelationBuilder.html
+│           │   │   │   │           │   │   ├── MapParser.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   └── RelationBuilder.html
+│           │   │   │   │           │   ├── pp
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   └── PrettyPrinter.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   └── PrettyPrinter.html
+│           │   │   │   │           │   ├── ResourceDescriber.html
+│           │   │   │   │           │   ├── server
+│           │   │   │   │           │   │   ├── AutoReloadableDataset.html
+│           │   │   │   │           │   │   ├── ClassMapServlet.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── AutoReloadableDataset.html
+│           │   │   │   │           │   │   │   ├── ClassMapServlet.html
+│           │   │   │   │           │   │   │   ├── ConfigLoader.html
+│           │   │   │   │           │   │   │   ├── D2RQDatasetDesc.html
+│           │   │   │   │           │   │   │   ├── D2RServer.html
+│           │   │   │   │           │   │   │   ├── DatasetDescriptionServlet.html
+│           │   │   │   │           │   │   │   ├── DirectoryServlet.html
+│           │   │   │   │           │   │   │   ├── JettyLauncher.html
+│           │   │   │   │           │   │   │   ├── MetadataCreator.html
+│           │   │   │   │           │   │   │   ├── ModelResponse.html
+│           │   │   │   │           │   │   │   ├── NamespaceServlet.html
+│           │   │   │   │           │   │   │   ├── PageServlet.html
+│           │   │   │   │           │   │   │   ├── PageServlet.Property.html
+│           │   │   │   │           │   │   │   ├── RequestParamHandler.html
+│           │   │   │   │           │   │   │   ├── ResourceDescriptionServlet.html
+│           │   │   │   │           │   │   │   ├── ResourceServlet.html
+│           │   │   │   │           │   │   │   ├── RootServlet.html
+│           │   │   │   │           │   │   │   ├── VelocityWrapper.html
+│           │   │   │   │           │   │   │   └── WebappInitListener.html
+│           │   │   │   │           │   │   ├── ConfigLoader.html
+│           │   │   │   │           │   │   ├── D2RQDatasetDesc.html
+│           │   │   │   │           │   │   ├── D2RServer.html
+│           │   │   │   │           │   │   ├── DatasetDescriptionServlet.html
+│           │   │   │   │           │   │   ├── DirectoryServlet.html
+│           │   │   │   │           │   │   ├── JettyLauncher.html
+│           │   │   │   │           │   │   ├── MetadataCreator.html
+│           │   │   │   │           │   │   ├── ModelResponse.html
+│           │   │   │   │           │   │   ├── NamespaceServlet.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── PageServlet.html
+│           │   │   │   │           │   │   ├── PageServlet.Property.html
+│           │   │   │   │           │   │   ├── RequestParamHandler.html
+│           │   │   │   │           │   │   ├── ResourceDescriptionServlet.html
+│           │   │   │   │           │   │   ├── ResourceServlet.html
+│           │   │   │   │           │   │   ├── RootServlet.html
+│           │   │   │   │           │   │   ├── VelocityWrapper.html
+│           │   │   │   │           │   │   └── WebappInitListener.html
+│           │   │   │   │           │   ├── sql
+│           │   │   │   │           │   │   ├── BeanCounter.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── BeanCounter.html
+│           │   │   │   │           │   │   │   ├── ConnectedDB.html
+│           │   │   │   │           │   │   │   ├── Quoter.html
+│           │   │   │   │           │   │   │   ├── Quoter.PatternDoublingQuoter.html
+│           │   │   │   │           │   │   │   ├── ResultRow.html
+│           │   │   │   │           │   │   │   ├── ResultRowMap.html
+│           │   │   │   │           │   │   │   ├── SelectStatementBuilder.html
+│           │   │   │   │           │   │   │   ├── SQL.html
+│           │   │   │   │           │   │   │   ├── SQLIterator.html
+│           │   │   │   │           │   │   │   └── SQLScriptLoader.html
+│           │   │   │   │           │   │   ├── ConnectedDB.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── Quoter.html
+│           │   │   │   │           │   │   ├── Quoter.PatternDoublingQuoter.html
+│           │   │   │   │           │   │   ├── ResultRow.html
+│           │   │   │   │           │   │   ├── ResultRowMap.html
+│           │   │   │   │           │   │   ├── SelectStatementBuilder.html
+│           │   │   │   │           │   │   ├── SQL.html
+│           │   │   │   │           │   │   ├── SQLIterator.html
+│           │   │   │   │           │   │   ├── SQLScriptLoader.html
+│           │   │   │   │           │   │   ├── types
+│           │   │   │   │           │   │   │   ├── class-use
+│           │   │   │   │           │   │   │   │   ├── DataType.GenericType.html
+│           │   │   │   │           │   │   │   │   ├── DataType.html
+│           │   │   │   │           │   │   │   │   ├── SQLApproximateNumeric.html
+│           │   │   │   │           │   │   │   │   ├── SQLBinary.html
+│           │   │   │   │           │   │   │   │   ├── SQLBit.html
+│           │   │   │   │           │   │   │   │   ├── SQLBoolean.html
+│           │   │   │   │           │   │   │   │   ├── SQLCharacterString.html
+│           │   │   │   │           │   │   │   │   ├── SQLDate.html
+│           │   │   │   │           │   │   │   │   ├── SQLExactNumeric.html
+│           │   │   │   │           │   │   │   │   ├── SQLInterval.html
+│           │   │   │   │           │   │   │   │   ├── SQLTime.html
+│           │   │   │   │           │   │   │   │   ├── SQLTimestamp.html
+│           │   │   │   │           │   │   │   │   └── UnsupportedDataType.html
+│           │   │   │   │           │   │   │   ├── DataType.GenericType.html
+│           │   │   │   │           │   │   │   ├── DataType.html
+│           │   │   │   │           │   │   │   ├── package-frame.html
+│           │   │   │   │           │   │   │   ├── package-summary.html
+│           │   │   │   │           │   │   │   ├── package-tree.html
+│           │   │   │   │           │   │   │   ├── package-use.html
+│           │   │   │   │           │   │   │   ├── SQLApproximateNumeric.html
+│           │   │   │   │           │   │   │   ├── SQLBinary.html
+│           │   │   │   │           │   │   │   ├── SQLBit.html
+│           │   │   │   │           │   │   │   ├── SQLBoolean.html
+│           │   │   │   │           │   │   │   ├── SQLCharacterString.html
+│           │   │   │   │           │   │   │   ├── SQLDate.html
+│           │   │   │   │           │   │   │   ├── SQLExactNumeric.html
+│           │   │   │   │           │   │   │   ├── SQLInterval.html
+│           │   │   │   │           │   │   │   ├── SQLTime.html
+│           │   │   │   │           │   │   │   ├── SQLTimestamp.html
+│           │   │   │   │           │   │   │   └── UnsupportedDataType.html
+│           │   │   │   │           │   │   └── vendor
+│           │   │   │   │           │   │       ├── class-use
+│           │   │   │   │           │   │       │   ├── HSQLDB.HSQLDBCompatibilityDoubleDataType.html
+│           │   │   │   │           │   │       │   ├── HSQLDB.html
+│           │   │   │   │           │   │       │   ├── MySQL.html
+│           │   │   │   │           │   │       │   ├── MySQL.MySQLCompatibilityBitDataType.html
+│           │   │   │   │           │   │       │   ├── MySQL.MySQLCompatibilityDateDataType.html
+│           │   │   │   │           │   │       │   ├── MySQL.MySQLCompatibilityTimeDataType.html
+│           │   │   │   │           │   │       │   ├── MySQL.MySQLCompatibilityTimestampDataType.html
+│           │   │   │   │           │   │       │   ├── Oracle.html
+│           │   │   │   │           │   │       │   ├── Oracle.OracleCompatibilityTimeZoneDataType.html
+│           │   │   │   │           │   │       │   ├── Oracle.OracleCompatibilityTimeZoneLocalDataType.html
+│           │   │   │   │           │   │       │   ├── PostgreSQL.html
+│           │   │   │   │           │   │       │   ├── SQL92.html
+│           │   │   │   │           │   │       │   ├── SQLServer.html
+│           │   │   │   │           │   │       │   └── Vendor.html
+│           │   │   │   │           │   │       ├── HSQLDB.HSQLDBCompatibilityDoubleDataType.html
+│           │   │   │   │           │   │       ├── HSQLDB.html
+│           │   │   │   │           │   │       ├── MySQL.html
+│           │   │   │   │           │   │       ├── MySQL.MySQLCompatibilityBitDataType.html
+│           │   │   │   │           │   │       ├── MySQL.MySQLCompatibilityDateDataType.html
+│           │   │   │   │           │   │       ├── MySQL.MySQLCompatibilityTimeDataType.html
+│           │   │   │   │           │   │       ├── MySQL.MySQLCompatibilityTimestampDataType.html
+│           │   │   │   │           │   │       ├── Oracle.html
+│           │   │   │   │           │   │       ├── Oracle.OracleCompatibilityTimeZoneDataType.html
+│           │   │   │   │           │   │       ├── Oracle.OracleCompatibilityTimeZoneLocalDataType.html
+│           │   │   │   │           │   │       ├── package-frame.html
+│           │   │   │   │           │   │       ├── package-summary.html
+│           │   │   │   │           │   │       ├── package-tree.html
+│           │   │   │   │           │   │       ├── package-use.html
+│           │   │   │   │           │   │       ├── PostgreSQL.html
+│           │   │   │   │           │   │       ├── SQL92.html
+│           │   │   │   │           │   │       ├── SQLServer.html
+│           │   │   │   │           │   │       └── Vendor.html
+│           │   │   │   │           │   ├── SystemLoader.html
+│           │   │   │   │           │   ├── values
+│           │   │   │   │           │   │   ├── BlankNodeID.html
+│           │   │   │   │           │   │   ├── class-use
+│           │   │   │   │           │   │   │   ├── BlankNodeID.html
+│           │   │   │   │           │   │   │   ├── Column.html
+│           │   │   │   │           │   │   │   ├── ConstantValueMaker.html
+│           │   │   │   │           │   │   │   ├── Pattern.EncodeFunction.html
+│           │   │   │   │           │   │   │   ├── Pattern.html
+│           │   │   │   │           │   │   │   ├── SQLExpressionValueMaker.html
+│           │   │   │   │           │   │   │   ├── Translator.html
+│           │   │   │   │           │   │   │   ├── ValueDecorator.html
+│           │   │   │   │           │   │   │   ├── ValueDecorator.ValueConstraint.html
+│           │   │   │   │           │   │   │   └── ValueMaker.html
+│           │   │   │   │           │   │   ├── Column.html
+│           │   │   │   │           │   │   ├── ConstantValueMaker.html
+│           │   │   │   │           │   │   ├── package-frame.html
+│           │   │   │   │           │   │   ├── package-summary.html
+│           │   │   │   │           │   │   ├── package-tree.html
+│           │   │   │   │           │   │   ├── package-use.html
+│           │   │   │   │           │   │   ├── Pattern.EncodeFunction.html
+│           │   │   │   │           │   │   ├── Pattern.html
+│           │   │   │   │           │   │   ├── SQLExpressionValueMaker.html
+│           │   │   │   │           │   │   ├── Translator.html
+│           │   │   │   │           │   │   ├── ValueDecorator.html
+│           │   │   │   │           │   │   ├── ValueDecorator.ValueConstraint.html
+│           │   │   │   │           │   │   └── ValueMaker.html
+│           │   │   │   │           │   └── vocab
+│           │   │   │   │           │       ├── class-use
+│           │   │   │   │           │       │   ├── D2RConfig.html
+│           │   │   │   │           │       │   ├── D2RQ.html
+│           │   │   │   │           │       │   ├── ISWC.html
+│           │   │   │   │           │       │   ├── JDBC.html
+│           │   │   │   │           │       │   ├── META.html
+│           │   │   │   │           │       │   ├── SD.html
+│           │   │   │   │           │       │   ├── SKOS.html
+│           │   │   │   │           │       │   ├── VocabularySummarizer.html
+│           │   │   │   │           │       │   └── VoID.html
+│           │   │   │   │           │       ├── D2RConfig.html
+│           │   │   │   │           │       ├── D2RQ.html
+│           │   │   │   │           │       ├── ISWC.html
+│           │   │   │   │           │       ├── JDBC.html
+│           │   │   │   │           │       ├── META.html
+│           │   │   │   │           │       ├── package-frame.html
+│           │   │   │   │           │       ├── package-summary.html
+│           │   │   │   │           │       ├── package-tree.html
+│           │   │   │   │           │       ├── package-use.html
+│           │   │   │   │           │       ├── SD.html
+│           │   │   │   │           │       ├── SKOS.html
+│           │   │   │   │           │       ├── VocabularySummarizer.html
+│           │   │   │   │           │       └── VoID.html
+│           │   │   │   │           └── pubby
+│           │   │   │   │               └── negotiation
+│           │   │   │   │                   ├── class-use
+│           │   │   │   │                   │   ├── ContentTypeNegotiator.html
+│           │   │   │   │                   │   ├── ContentTypeNegotiator.VariantSpec.html
+│           │   │   │   │                   │   ├── MediaRangeSpec.html
+│           │   │   │   │                   │   └── PubbyNegotiator.html
+│           │   │   │   │                   ├── ContentTypeNegotiator.html
+│           │   │   │   │                   ├── ContentTypeNegotiator.VariantSpec.html
+│           │   │   │   │                   ├── MediaRangeSpec.html
+│           │   │   │   │                   ├── package-frame.html
+│           │   │   │   │                   ├── package-summary.html
+│           │   │   │   │                   ├── package-tree.html
+│           │   │   │   │                   ├── package-use.html
+│           │   │   │   │                   └── PubbyNegotiator.html
+│           │   │   │   ├── deprecated-list.html
+│           │   │   │   ├── help-doc.html
+│           │   │   │   ├── index-files
+│           │   │   │   │   ├── index-10.html
+│           │   │   │   │   ├── index-11.html
+│           │   │   │   │   ├── index-12.html
+│           │   │   │   │   ├── index-13.html
+│           │   │   │   │   ├── index-14.html
+│           │   │   │   │   ├── index-15.html
+│           │   │   │   │   ├── index-16.html
+│           │   │   │   │   ├── index-17.html
+│           │   │   │   │   ├── index-18.html
+│           │   │   │   │   ├── index-19.html
+│           │   │   │   │   ├── index-1.html
+│           │   │   │   │   ├── index-20.html
+│           │   │   │   │   ├── index-21.html
+│           │   │   │   │   ├── index-22.html
+│           │   │   │   │   ├── index-23.html
+│           │   │   │   │   ├── index-24.html
+│           │   │   │   │   ├── index-25.html
+│           │   │   │   │   ├── index-2.html
+│           │   │   │   │   ├── index-3.html
+│           │   │   │   │   ├── index-4.html
+│           │   │   │   │   ├── index-5.html
+│           │   │   │   │   ├── index-6.html
+│           │   │   │   │   ├── index-7.html
+│           │   │   │   │   ├── index-8.html
+│           │   │   │   │   └── index-9.html
+│           │   │   │   ├── index.html
+│           │   │   │   ├── overview-frame.html
+│           │   │   │   ├── overview-summary.html
+│           │   │   │   ├── overview-tree.html
+│           │   │   │   ├── package-list
+│           │   │   │   ├── resources
+│           │   │   │   │   └── inherit.gif
+│           │   │   │   ├── serialized-form.html
+│           │   │   │   └── stylesheet.css
+│           │   │   ├── jena.html
+│           │   │   ├── resources.html
+│           │   │   ├── script.js
+│           │   │   ├── style.css
+│           │   │   └── terms
+│           │   │       ├── config.rdf
+│           │   │       ├── config.ttl
+│           │   │       ├── d2rq.rdf
+│           │   │       ├── d2rq.ttl
+│           │   │       └── jdbc.txt
+│           │   ├── dump-rdf
+│           │   ├── dump-rdf.bat
+│           │   ├── etc
+│           │   │   ├── log4j-file.properties
+│           │   │   └── log4j.properties
+│           │   ├── generate-mapping
+│           │   ├── generate-mapping.bat
+│           │   ├── hudong_baike.nt
+│           │   ├── kg_demo_mapping_baidu_baike.ttl
+│           │   ├── kg_demo_mapping_hudong_baike.ttl
+│           │   ├── lib
+│           │   │   ├── arq-2.9
+│           │   │   │   ├── commons-codec-1.6.jar
+│           │   │   │   ├── httpclient-4.1.3.jar
+│           │   │   │   ├── httpcore-4.1.4.jar
+│           │   │   │   ├── icu4j-3.4.4.jar
+│           │   │   │   ├── jena-arq-2.9.0-incubating.jar
+│           │   │   │   ├── jena-core-2.7.0-incubating.jar
+│           │   │   │   ├── jena-core-2.7.0-incubating-tests.jar
+│           │   │   │   ├── jena-iri-0.9.0-incubating.jar
+│           │   │   │   ├── junit-4.9.jar
+│           │   │   │   ├── xercesImpl.jar
+│           │   │   │   └── xml-apis.jar
+│           │   │   ├── d2rq-0.8.1.jar
+│           │   │   ├── db-drivers
+│           │   │   │   ├── commons-dbcp-1.4.jar
+│           │   │   │   ├── commons-pool-1.6.jar
+│           │   │   │   ├── mysql-connector-java-5.1.18-bin.jar
+│           │   │   │   ├── postgresql-9.1-901.jdbc3.jar
+│           │   │   │   └── sdb-1.3.4.jar
+│           │   │   ├── hsqldb-2.2.8
+│           │   │   │   └── hsqldb.jar
+│           │   │   ├── jetty-8.1.1
+│           │   │   │   ├── jetty-continuation-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-http-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-io-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-security-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-server-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-servlet-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-util-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-webapp-8.1.1.v20120215.jar
+│           │   │   │   ├── jetty-xml-8.1.1.v20120215.jar
+│           │   │   │   └── servlet-api-3.0.jar
+│           │   │   ├── joseki-3.4.4
+│           │   │   │   └── joseki-3.4.4.jar
+│           │   │   ├── logging
+│           │   │   │   ├── commons-logging-1.1.jar
+│           │   │   │   ├── log4j-1.2.16.jar
+│           │   │   │   ├── slf4j-api-1.6.4.jar
+│           │   │   │   └── slf4j-log4j12-1.6.4.jar
+│           │   │   └── velocity-1.7
+│           │   │       ├── commons-collections-3.2.1.jar
+│           │   │       ├── commons-lang-2.4.jar
+│           │   │       ├── oro-2.0.8.jar
+│           │   │       └── velocity-1.7.jar
+│           │   ├── README.md
+│           │   ├── RELEASE_NOTES.md
+│           │   ├── src
+│           │   │   ├── d2rq
+│           │   │   │   ├── d2r_query.java
+│           │   │   │   ├── dump_rdf.java
+│           │   │   │   ├── generate_mapping.java
+│           │   │   │   ├── package.html
+│           │   │   │   └── server.java
+│           │   │   └── de
+│           │   │       └── fuberlin
+│           │   │           └── wiwiss
+│           │   │               ├── d2rq
+│           │   │               │   ├── algebra
+│           │   │               │   │   ├── AliasMap.java
+│           │   │               │   │   ├── Attribute.java
+│           │   │               │   │   ├── ColumnRenamer.java
+│           │   │               │   │   ├── ColumnRenamerMap.java
+│           │   │               │   │   ├── CompatibleRelationGroup.java
+│           │   │               │   │   ├── ExpressionProjectionSpec.java
+│           │   │               │   │   ├── Join.java
+│           │   │               │   │   ├── JoinOptimizer.java
+│           │   │               │   │   ├── MutableRelation.java
+│           │   │               │   │   ├── NodeRelation.java
+│           │   │               │   │   ├── OrderSpec.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   ├── ProjectionSpec.java
+│           │   │               │   │   ├── RelationalOperators.java
+│           │   │               │   │   ├── RelationImpl.java
+│           │   │               │   │   ├── Relation.java
+│           │   │               │   │   ├── RelationName.java
+│           │   │               │   │   ├── TripleRelation.java
+│           │   │               │   │   └── VariableConstraints.java
+│           │   │               │   ├── assembler
+│           │   │               │   │   ├── D2RQAssembler.java
+│           │   │               │   │   └── package.html
+│           │   │               │   ├── ClassMapLister.java
+│           │   │               │   ├── CommandLineTool.java
+│           │   │               │   ├── csv
+│           │   │               │   │   ├── CSV.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   └── TranslationTableParser.java
+│           │   │               │   ├── D2RQException.java
+│           │   │               │   ├── dbschema
+│           │   │               │   │   ├── DatabaseSchemaInspector.java
+│           │   │               │   │   └── package.html
+│           │   │               │   ├── download
+│           │   │               │   │   └── DownloadContentQuery.java
+│           │   │               │   ├── engine
+│           │   │               │   │   ├── BindingMaker.java
+│           │   │               │   │   ├── GraphPatternTranslator.java
+│           │   │               │   │   ├── OpTableSQL.java
+│           │   │               │   │   ├── OpUnionTableSQL.java
+│           │   │               │   │   ├── PushDownOpFilterVisitor.java
+│           │   │               │   │   ├── QueryEngineD2RQ.java
+│           │   │               │   │   ├── QueryIterTableSQL.java
+│           │   │               │   │   ├── TransformFilterCNF.java
+│           │   │               │   │   ├── TransformOpBGP.java
+│           │   │               │   │   ├── TripleRelationJoiner.java
+│           │   │               │   │   └── VarCollector.java
+│           │   │               │   ├── expr
+│           │   │               │   │   ├── Add.java
+│           │   │               │   │   ├── AttributeExpr.java
+│           │   │               │   │   ├── BinaryOperator.java
+│           │   │               │   │   ├── BooleanToIntegerCaseExpression.java
+│           │   │               │   │   ├── Concatenation.java
+│           │   │               │   │   ├── Conjunction.java
+│           │   │               │   │   ├── Constant.java
+│           │   │               │   │   ├── Disjunction.java
+│           │   │               │   │   ├── Divide.java
+│           │   │               │   │   ├── Equality.java
+│           │   │               │   │   ├── Expression.java
+│           │   │               │   │   ├── GreaterThan.java
+│           │   │               │   │   ├── GreaterThanOrEqual.java
+│           │   │               │   │   ├── LessThan.java
+│           │   │               │   │   ├── LessThanOrEqual.java
+│           │   │               │   │   ├── Multiply.java
+│           │   │               │   │   ├── Negation.java
+│           │   │               │   │   ├── NotNull.java
+│           │   │               │   │   ├── SQLExpression.java
+│           │   │               │   │   ├── Subtract.java
+│           │   │               │   │   └── UnaryMinus.java
+│           │   │               │   ├── find
+│           │   │               │   │   ├── FindQuery.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   ├── TripleQueryIter.java
+│           │   │               │   │   └── URIMakerRule.java
+│           │   │               │   ├── jena
+│           │   │               │   │   ├── CachingGraphD2RQ.java
+│           │   │               │   │   ├── D2RQQueryHandler.java
+│           │   │               │   │   ├── GraphD2RQ.java
+│           │   │               │   │   └── ModelD2RQ.java
+│           │   │               │   ├── Log4jHelper.java
+│           │   │               │   ├── map
+│           │   │               │   │   ├── ClassMap.java
+│           │   │               │   │   ├── Configuration.java
+│           │   │               │   │   ├── Database.java
+│           │   │               │   │   ├── DownloadMap.java
+│           │   │               │   │   ├── MapObject.java
+│           │   │               │   │   ├── Mapping.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   ├── PropertyBridge.java
+│           │   │               │   │   ├── PropertyMap.java
+│           │   │               │   │   ├── ResourceMap.java
+│           │   │               │   │   └── TranslationTable.java
+│           │   │               │   ├── mapgen
+│           │   │               │   │   ├── FilterIncludeExclude.java
+│           │   │               │   │   ├── Filter.java
+│           │   │               │   │   ├── FilterMatchAny.java
+│           │   │               │   │   ├── FilterMatchColumn.java
+│           │   │               │   │   ├── FilterMatchSchema.java
+│           │   │               │   │   ├── FilterMatchTable.java
+│           │   │               │   │   ├── FilterParser.java
+│           │   │               │   │   ├── IRIEncoder.java
+│           │   │               │   │   ├── MappingGenerator.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   └── W3CMappingGenerator.java
+│           │   │               │   ├── nodes
+│           │   │               │   │   ├── DetermineNodeType.java
+│           │   │               │   │   ├── FixedNodeMaker.java
+│           │   │               │   │   ├── NodeMaker.java
+│           │   │               │   │   ├── NodeSetConstraintBuilder.java
+│           │   │               │   │   ├── NodeSetFilter.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   └── TypedNodeMaker.java
+│           │   │               │   ├── optimizer
+│           │   │               │   │   └── expr
+│           │   │               │   │       ├── AttributeExprEx.java
+│           │   │               │   │       ├── ConstantEx.java
+│           │   │               │   │       ├── TransformExprToSQLApplyer.java
+│           │   │               │   │       └── XSD.java
+│           │   │               │   ├── package.html
+│           │   │               │   ├── parser
+│           │   │               │   │   ├── MapParser.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   └── RelationBuilder.java
+│           │   │               │   ├── pp
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   └── PrettyPrinter.java
+│           │   │               │   ├── ResourceDescriber.java
+│           │   │               │   ├── server
+│           │   │               │   │   ├── AutoReloadableDataset.java
+│           │   │               │   │   ├── ClassMapServlet.java
+│           │   │               │   │   ├── ConfigLoader.java
+│           │   │               │   │   ├── D2RQDatasetDesc.java
+│           │   │               │   │   ├── D2RServer.java
+│           │   │               │   │   ├── DatasetDescriptionServlet.java
+│           │   │               │   │   ├── DirectoryServlet.java
+│           │   │               │   │   ├── JettyLauncher.java
+│           │   │               │   │   ├── MetadataCreator.java
+│           │   │               │   │   ├── ModelResponse.java
+│           │   │               │   │   ├── NamespaceServlet.java
+│           │   │               │   │   ├── PageServlet.java
+│           │   │               │   │   ├── RequestParamHandler.java
+│           │   │               │   │   ├── ResourceDescriptionServlet.java
+│           │   │               │   │   ├── ResourceServlet.java
+│           │   │               │   │   ├── RootServlet.java
+│           │   │               │   │   ├── VelocityWrapper.java
+│           │   │               │   │   └── WebappInitListener.java
+│           │   │               │   ├── sql
+│           │   │               │   │   ├── BeanCounter.java
+│           │   │               │   │   ├── ConnectedDB.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   ├── Quoter.java
+│           │   │               │   │   ├── ResultRow.java
+│           │   │               │   │   ├── ResultRowMap.java
+│           │   │               │   │   ├── SelectStatementBuilder.java
+│           │   │               │   │   ├── SQLIterator.java
+│           │   │               │   │   ├── SQL.java
+│           │   │               │   │   ├── SQLScriptLoader.java
+│           │   │               │   │   ├── types
+│           │   │               │   │   │   ├── DataType.java
+│           │   │               │   │   │   ├── SQLApproximateNumeric.java
+│           │   │               │   │   │   ├── SQLBinary.java
+│           │   │               │   │   │   ├── SQLBit.java
+│           │   │               │   │   │   ├── SQLBoolean.java
+│           │   │               │   │   │   ├── SQLCharacterString.java
+│           │   │               │   │   │   ├── SQLDate.java
+│           │   │               │   │   │   ├── SQLExactNumeric.java
+│           │   │               │   │   │   ├── SQLInterval.java
+│           │   │               │   │   │   ├── SQLTime.java
+│           │   │               │   │   │   ├── SQLTimestamp.java
+│           │   │               │   │   │   └── UnsupportedDataType.java
+│           │   │               │   │   └── vendor
+│           │   │               │   │       ├── HSQLDB.java
+│           │   │               │   │       ├── MySQL.java
+│           │   │               │   │       ├── Oracle.java
+│           │   │               │   │       ├── PostgreSQL.java
+│           │   │               │   │       ├── SQL92.java
+│           │   │               │   │       ├── SQLServer.java
+│           │   │               │   │       └── Vendor.java
+│           │   │               │   ├── SystemLoader.java
+│           │   │               │   ├── values
+│           │   │               │   │   ├── BlankNodeID.java
+│           │   │               │   │   ├── Column.java
+│           │   │               │   │   ├── ConstantValueMaker.java
+│           │   │               │   │   ├── package.html
+│           │   │               │   │   ├── Pattern.java
+│           │   │               │   │   ├── SQLExpressionValueMaker.java
+│           │   │               │   │   ├── Translator.java
+│           │   │               │   │   ├── ValueDecorator.java
+│           │   │               │   │   └── ValueMaker.java
+│           │   │               │   └── vocab
+│           │   │               │       ├── D2RConfig.java
+│           │   │               │       ├── D2RQ.java
+│           │   │               │       ├── ISWC.java
+│           │   │               │       ├── JDBC.java
+│           │   │               │       ├── META.java
+│           │   │               │       ├── package.html
+│           │   │               │       ├── SD.java
+│           │   │               │       ├── SKOS.java
+│           │   │               │       ├── VocabularySummarizer.java
+│           │   │               │       └── VoID.java
+│           │   │               └── pubby
+│           │   │                   └── negotiation
+│           │   │                       ├── ContentTypeNegotiator.java
+│           │   │                       ├── MediaRangeSpec.java
+│           │   │                       └── PubbyNegotiator.java
+│           │   ├── test
+│           │   │   └── de
+│           │   │       └── fuberlin
+│           │   │           └── wiwiss
+│           │   │               └── d2rq
+│           │   │                   ├── algebra
+│           │   │                   │   ├── AliasMapTest.java
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── AttributeTest.java
+│           │   │                   │   ├── ColumnRenamerTest.java
+│           │   │                   │   ├── CompatibleRelationGroupTest.java
+│           │   │                   │   ├── JoinTest.java
+│           │   │                   │   ├── RelationTest.java
+│           │   │                   │   └── TripleRelationTest.java
+│           │   │                   ├── AllTests.java
+│           │   │                   ├── csv
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── translationtable.csv
+│           │   │                   │   └── TranslationTableParserTest.java
+│           │   │                   ├── d2rq_sdb
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── config
+│           │   │                   │   │   ├── d2r-hsql-mapping.n3
+│           │   │                   │   │   └── d2r-mysql-mapping.n3
+│           │   │                   │   ├── dataset
+│           │   │                   │   │   ├── dataset.sql.zip
+│           │   │                   │   │   └── dataset.ttl.zip
+│           │   │                   │   ├── LoadDataTest.java
+│           │   │                   │   ├── queries
+│           │   │                   │   │   ├── bsbm
+│           │   │                   │   │   │   ├── query10.rq
+│           │   │                   │   │   │   ├── query11.rq
+│           │   │                   │   │   │   ├── query12.rq
+│           │   │                   │   │   │   ├── query13.rq
+│           │   │                   │   │   │   ├── query14.rq
+│           │   │                   │   │   │   ├── query15.rq
+│           │   │                   │   │   │   ├── query16.rq
+│           │   │                   │   │   │   ├── query17.rq
+│           │   │                   │   │   │   ├── query18.rq
+│           │   │                   │   │   │   ├── query1.rq
+│           │   │                   │   │   │   ├── query2.rq
+│           │   │                   │   │   │   ├── query3.rq
+│           │   │                   │   │   │   ├── query4.rq
+│           │   │                   │   │   │   ├── query5.rq
+│           │   │                   │   │   │   ├── query6.rq
+│           │   │                   │   │   │   ├── query7.rq
+│           │   │                   │   │   │   ├── query8.rq
+│           │   │                   │   │   │   └── query9.rq
+│           │   │                   │   │   ├── dawg
+│           │   │                   │   │   │   ├── algebra
+│           │   │                   │   │   │   │   ├── filter-nested-1.rq
+│           │   │                   │   │   │   │   ├── filter-nested-2.rq
+│           │   │                   │   │   │   │   ├── filter-placement-1.rq
+│           │   │                   │   │   │   │   ├── filter-placement-2.rq
+│           │   │                   │   │   │   │   ├── filter-placement-3.rq
+│           │   │                   │   │   │   │   ├── filter-scope-1.rq
+│           │   │                   │   │   │   │   ├── join-combo-1.rq
+│           │   │                   │   │   │   │   ├── join-combo-2.rq
+│           │   │                   │   │   │   │   ├── opt-filter-1.rq
+│           │   │                   │   │   │   │   ├── opt-filter-2.rq
+│           │   │                   │   │   │   │   ├── opt-filter-3.rq
+│           │   │                   │   │   │   │   ├── two-nested-opt-alt.rq
+│           │   │                   │   │   │   │   ├── two-nested-opt.rq
+│           │   │                   │   │   │   │   └── var-scope-join-1.rq
+│           │   │                   │   │   │   ├── basic
+│           │   │                   │   │   │   │   ├── base-prefix-1.rq
+│           │   │                   │   │   │   │   ├── base-prefix-2.rq
+│           │   │                   │   │   │   │   ├── base-prefix-3.rq
+│           │   │                   │   │   │   │   ├── base-prefix-4.rq
+│           │   │                   │   │   │   │   ├── base-prefix-5.rq
+│           │   │                   │   │   │   │   ├── bgp-no-match.rq
+│           │   │                   │   │   │   │   ├── list-1.rq
+│           │   │                   │   │   │   │   ├── list-2.rq
+│           │   │                   │   │   │   │   ├── list-3.rq
+│           │   │                   │   │   │   │   ├── list-4.rq
+│           │   │                   │   │   │   │   ├── quotes-1.rq
+│           │   │                   │   │   │   │   ├── quotes-2.rq
+│           │   │                   │   │   │   │   ├── quotes-3.rq
+│           │   │                   │   │   │   │   ├── quotes-4.rq
+│           │   │                   │   │   │   │   ├── spoo-1.rq
+│           │   │                   │   │   │   │   ├── term-1.rq
+│           │   │                   │   │   │   │   ├── term-2.rq
+│           │   │                   │   │   │   │   ├── term-3.rq
+│           │   │                   │   │   │   │   ├── term-4.rq
+│           │   │                   │   │   │   │   ├── term-5.rq
+│           │   │                   │   │   │   │   ├── term-6.rq
+│           │   │                   │   │   │   │   ├── term-7.rq
+│           │   │                   │   │   │   │   ├── term-8.rq
+│           │   │                   │   │   │   │   ├── term-9.rq
+│           │   │                   │   │   │   │   ├── var-1.rq
+│           │   │                   │   │   │   │   └── var-2.rq
+│           │   │                   │   │   │   ├── distinct
+│           │   │                   │   │   │   │   ├── distinct-1.rq
+│           │   │                   │   │   │   │   ├── distinct-2.rq
+│           │   │                   │   │   │   │   ├── distinct-star-1.rq
+│           │   │                   │   │   │   │   ├── no-distinct-1.rq
+│           │   │                   │   │   │   │   └── no-distinct-2.rq
+│           │   │                   │   │   │   ├── expr-builtin
+│           │   │                   │   │   │   │   ├── lang-case-sensitivity-eq.rq
+│           │   │                   │   │   │   │   ├── lang-case-sensitivity-ne.rq
+│           │   │                   │   │   │   │   ├── q-blank-1.rq
+│           │   │                   │   │   │   │   ├── q-datatype-1.rq
+│           │   │                   │   │   │   │   ├── q-datatype-2.rq
+│           │   │                   │   │   │   │   ├── q-datatype-3.rq
+│           │   │                   │   │   │   │   ├── q-iri-1.rq
+│           │   │                   │   │   │   │   ├── q-isliteral-1.rq
+│           │   │                   │   │   │   │   ├── q-lang-1.rq
+│           │   │                   │   │   │   │   ├── q-lang-2.rq
+│           │   │                   │   │   │   │   ├── q-lang-3.rq
+│           │   │                   │   │   │   │   ├── q-langMatches-1.rq
+│           │   │                   │   │   │   │   ├── q-langMatches-2.rq
+│           │   │                   │   │   │   │   ├── q-langMatches-3.rq
+│           │   │                   │   │   │   │   ├── q-langMatches-4.rq
+│           │   │                   │   │   │   │   ├── q-langMatches-de-de.rq
+│           │   │                   │   │   │   │   ├── q-str-1.rq
+│           │   │                   │   │   │   │   ├── q-str-2.rq
+│           │   │                   │   │   │   │   ├── q-str-3.rq
+│           │   │                   │   │   │   │   ├── q-str-4.rq
+│           │   │                   │   │   │   │   └── q-uri-1.rq
+│           │   │                   │   │   │   ├── expr-equals
+│           │   │                   │   │   │   │   ├── query-eq-1.rq
+│           │   │                   │   │   │   │   ├── query-eq2-1.rq
+│           │   │                   │   │   │   │   ├── query-eq2-2.rq
+│           │   │                   │   │   │   │   ├── query-eq2-graph-1.rq
+│           │   │                   │   │   │   │   ├── query-eq-2.rq
+│           │   │                   │   │   │   │   ├── query-eq-3.rq
+│           │   │                   │   │   │   │   ├── query-eq-4.rq
+│           │   │                   │   │   │   │   ├── query-eq-5.rq
+│           │   │                   │   │   │   │   ├── query-eq-graph-1.rq
+│           │   │                   │   │   │   │   ├── query-eq-graph-2.rq
+│           │   │                   │   │   │   │   ├── query-eq-graph-3.rq
+│           │   │                   │   │   │   │   ├── query-eq-graph-4.rq
+│           │   │                   │   │   │   │   └── query-eq-graph-5.rq
+│           │   │                   │   │   │   ├── expr-ops
+│           │   │                   │   │   │   │   ├── query-ge-1.rq
+│           │   │                   │   │   │   │   ├── query-le-1.rq
+│           │   │                   │   │   │   │   ├── query-minus-1.rq
+│           │   │                   │   │   │   │   ├── query-mul-1.rq
+│           │   │                   │   │   │   │   ├── query-plus-1.rq
+│           │   │                   │   │   │   │   ├── query-unminus-1.rq
+│           │   │                   │   │   │   │   └── query-unplus-1.rq
+│           │   │                   │   │   │   ├── open-world
+│           │   │                   │   │   │   │   ├── date-1.rq
+│           │   │                   │   │   │   │   ├── date-2.rq
+│           │   │                   │   │   │   │   ├── date-3.rq
+│           │   │                   │   │   │   │   ├── date-4.rq
+│           │   │                   │   │   │   │   ├── open-cmp-01.rq
+│           │   │                   │   │   │   │   ├── open-cmp-02.rq
+│           │   │                   │   │   │   │   ├── open-eq-01.rq
+│           │   │                   │   │   │   │   ├── open-eq-02.rq
+│           │   │                   │   │   │   │   ├── open-eq-03.rq
+│           │   │                   │   │   │   │   ├── open-eq-04.rq
+│           │   │                   │   │   │   │   ├── open-eq-05.rq
+│           │   │                   │   │   │   │   ├── open-eq-06.rq
+│           │   │                   │   │   │   │   ├── open-eq-07.rq
+│           │   │                   │   │   │   │   ├── open-eq-08.rq
+│           │   │                   │   │   │   │   ├── open-eq-09.rq
+│           │   │                   │   │   │   │   ├── open-eq-10.rq
+│           │   │                   │   │   │   │   ├── open-eq-11.rq
+│           │   │                   │   │   │   │   └── open-eq-12.rq
+│           │   │                   │   │   │   ├── optional
+│           │   │                   │   │   │   │   ├── q-opt-1.rq
+│           │   │                   │   │   │   │   ├── q-opt-2.rq
+│           │   │                   │   │   │   │   ├── q-opt-3.rq
+│           │   │                   │   │   │   │   ├── q-opt-4.rq
+│           │   │                   │   │   │   │   ├── q-opt-complex-1.rq
+│           │   │                   │   │   │   │   ├── q-opt-complex-2.rq
+│           │   │                   │   │   │   │   ├── q-opt-complex-3.rq
+│           │   │                   │   │   │   │   └── q-opt-complex-4.rq
+│           │   │                   │   │   │   └── optional-filter
+│           │   │                   │   │   │       ├── expr-1.rq
+│           │   │                   │   │   │       ├── expr-2.rq
+│           │   │                   │   │   │       ├── expr-3.rq
+│           │   │                   │   │   │       ├── expr-4.rq
+│           │   │                   │   │   │       └── expr-5.rq
+│           │   │                   │   │   └── other
+│           │   │                   │   │       ├── other10.rq
+│           │   │                   │   │       ├── other11.rq
+│           │   │                   │   │       ├── other1.rq
+│           │   │                   │   │       ├── other2.rq
+│           │   │                   │   │       ├── other3.rq
+│           │   │                   │   │       ├── other4.rq
+│           │   │                   │   │       ├── other5.rq
+│           │   │                   │   │       ├── other6.rq
+│           │   │                   │   │       ├── other7.rq
+│           │   │                   │   │       ├── other8.rq
+│           │   │                   │   │       └── other9.rq
+│           │   │                   │   └── SdbSqlEqualityTest.java
+│           │   │                   ├── D2RQTestSuite.java
+│           │   │                   ├── DBConnectionTest.java
+│           │   │                   ├── dbschema
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   └── ISWCSchemaTest.java
+│           │   │                   ├── download
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── DownloadContentQueryTest.java
+│           │   │                   │   └── download-map.ttl
+│           │   │                   ├── engine
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── GraphPatternTranslatorTest.java
+│           │   │                   │   ├── MapFixture.java
+│           │   │                   │   ├── object-uricolumn.n3
+│           │   │                   │   ├── simple.n3
+│           │   │                   │   └── type-bridge.n3
+│           │   │                   ├── examples
+│           │   │                   │   ├── AssemblerExample.java
+│           │   │                   │   ├── JenaGraphExample.java
+│           │   │                   │   ├── JenaModelExample.java
+│           │   │                   │   ├── SPARQLExample.java
+│           │   │                   │   └── SystemLoaderExample.java
+│           │   │                   ├── expr
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── ConcatenationTest.java
+│           │   │                   │   ├── ConjunctionTest.java
+│           │   │                   │   ├── ExpressionTest.java
+│           │   │                   │   └── SQLExpressionTest.java
+│           │   │                   ├── find
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   └── URIMakerRuleTest.java
+│           │   │                   ├── functional_tests
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── FindTest.java
+│           │   │                   │   ├── ModelAPITest.java
+│           │   │                   │   └── SPARQLTest.java
+│           │   │                   ├── helpers
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── FindTestFramework.java
+│           │   │                   │   ├── HSQLDatabase.java
+│           │   │                   │   ├── HSQLSimpleTest.java
+│           │   │                   │   ├── MappingHelper.java
+│           │   │                   │   ├── QueryLanguageTestFramework.java
+│           │   │                   │   └── simple.ttl
+│           │   │                   ├── JenaAPITest.java
+│           │   │                   ├── map
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── CompileTest.java
+│           │   │                   │   ├── ConstantValueClassMapTest.java
+│           │   │                   │   ├── MappingTest.java
+│           │   │                   │   └── TranslationTableTest.java
+│           │   │                   ├── mapgen
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── FilterParserTest.java
+│           │   │                   │   └── IRIEncoderTest.java
+│           │   │                   ├── nodes
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── NodeMakerTest.java
+│           │   │                   │   └── NodeSetTest.java
+│           │   │                   ├── optimizer
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── ExprTransformTest2.java
+│           │   │                   │   ├── ExprTransformTest.java
+│           │   │                   │   ├── filtertests.n3
+│           │   │                   │   └── INFO
+│           │   │                   ├── parser
+│           │   │                   │   ├── alias.ttl
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── download-map.ttl
+│           │   │                   │   ├── literal-instead-of-resource.ttl
+│           │   │                   │   ├── ParserTest.java
+│           │   │                   │   ├── resource-instead-of-literal.ttl
+│           │   │                   │   ├── simple.ttl
+│           │   │                   │   ├── translation-table.ttl
+│           │   │                   │   ├── type-classmap-and-propertybridge.ttl
+│           │   │                   │   └── URITest.java
+│           │   │                   ├── pp
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   └── PrettyPrinterTest.java
+│           │   │                   ├── prefixes.ttl
+│           │   │                   ├── sql
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── DatatypeTestBase.java
+│           │   │                   │   ├── DummyDB.java
+│           │   │                   │   ├── hsqldb_datatypes.sql
+│           │   │                   │   ├── HSQLDBDatatypeTest.java
+│           │   │                   │   ├── mysql_datatypes.sql
+│           │   │                   │   ├── MySQLDatatypeTest.java
+│           │   │                   │   ├── ResultRowTest.java
+│           │   │                   │   ├── SQLBuildingTest.java
+│           │   │                   │   └── SQLSyntaxTest.java
+│           │   │                   ├── values
+│           │   │                   │   ├── AllTests.java
+│           │   │                   │   ├── DummyValueMaker.java
+│           │   │                   │   ├── PatternTest.java
+│           │   │                   │   └── ValueMakerTest.java
+│           │   │                   └── vocab
+│           │   │                       ├── AllTests.java
+│           │   │                       ├── defined-properties.ttl
+│           │   │                       ├── defined-types.ttl
+│           │   │                       ├── no-type.ttl
+│           │   │                       ├── one-undefined-property.ttl
+│           │   │                       ├── one-undefined-type.ttl
+│           │   │                       ├── other-namespace-properties.ttl
+│           │   │                       ├── other-namespace-types.ttl
+│           │   │                       ├── Test.java
+│           │   │                       ├── two-undefined-properties.ttl
+│           │   │                       ├── two-undefined-types.ttl
+│           │   │                       └── VocabularySummarizerTest.java
+│           │   └── webapp
+│           │       ├── index.html
+│           │       ├── snorql
+│           │       │   ├── index.html
+│           │       │   ├── jquery.min.js
+│           │       │   ├── link.png
+│           │       │   ├── prototype.js
+│           │       │   ├── rdf_flyer.24.gif
+│           │       │   ├── scriptaculous
+│           │       │   │   ├── builder.js
+│           │       │   │   ├── controls.js
+│           │       │   │   ├── dragdrop.js
+│           │       │   │   ├── effects.js
+│           │       │   │   ├── scriptaculous.js
+│           │       │   │   ├── slider.js
+│           │       │   │   ├── sound.js
+│           │       │   │   └── unittest.js
+│           │       │   ├── snorql.js
+│           │       │   ├── sparql.js
+│           │       │   ├── style.css
+│           │       │   └── xml-to-html.xsl
+│           │       ├── static
+│           │       │   └── metadata.css
+│           │       └── WEB-INF
+│           │           ├── dataset-metadata.ttl
+│           │           ├── resource-metadata.ttl
+│           │           ├── templates
+│           │           │   ├── dataset_page.vm
+│           │           │   ├── directory_page.vm
+│           │           │   ├── error.vm
+│           │           │   ├── metadatatable.vm
+│           │           │   ├── resource_page.vm
+│           │           │   └── root_page.vm
+│           │           ├── velocity.properties
+│           │           └── web.xml
+│           ├── d2rq-0.8.1.tar.gz
+│           ├── get_ttl.sh
+│           ├── kg_movie_tultle.owl
+│           └── kg_movie_tultle.ttl
+├── img
+│   ├── actor_movie_genre.png
+│   ├── baike.png
+│   ├── example_d2rq.png
+│   ├── example_elastic_ss.png
+│   └── example_REfO_KBQA.png
+├── KBQA
+│   └── patternREfO
+│       ├── data
+│       │   ├── actorName.txt
+│       │   ├── get_dict.txt
+│       │   └── movieName.txt
+│       ├── error.txt
+│       ├── get_dict.sh
+│       ├── in_and_out.txt
+│       ├── query.py
+│       └── utils
+│           ├── __init__.py
+│           ├── __init__.pyc
+│           ├── rules.py
+│           ├── rules.pyc
+│           ├── word_tagging.py
+│           └── word_tagging.pyc
+├── knowledge_fusion
+│   └── silk
+│       ├── batch_link.py
+│       └── run.py
+├── README.md
+├── requirement.text
+└── semantic_search
+    └── elasticsearch
+        ├── data
+        │   └── __init__.py
+        ├── query.py
+        └── utils
+            ├── build_dict.py
+            ├── get_ac_attr.py
+            ├── get_json.py
+            ├── get_total_val.py
+            ├── __init__.py
+            ├── insert.py
+            ├── query_cmd.sh
+            └── views.py
+
+194 directories, 1217 files

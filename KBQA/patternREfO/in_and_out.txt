@@ -1,0 +1,6 @@
+init...........
+done 
+
+Please input your question: 
+周星驰是谁
+

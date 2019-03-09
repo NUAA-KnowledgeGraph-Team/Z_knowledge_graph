@@ -1,0 +1,12 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.262 seconds.
+Prefix dict has been built succesfully.
+Traceback (most recent call last):
+  File "query.py", line 25, in <module>
+    results = sparql_base.query().convert()
+  File "/usr/local/lib/python2.7/dist-packages/SPARQLWrapper/Wrapper.py", line 798, in query
+    return QueryResult(self._query())
+  File "/usr/local/lib/python2.7/dist-packages/SPARQLWrapper/Wrapper.py", line 778, in _query
+    raise e
+urllib2.HTTPError: HTTP Error 503: Service Unavailable
